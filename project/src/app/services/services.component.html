@@ -1,0 +1,15 @@
+<br>
+  <button color="primary" mat-button (click)="users()"> ver usuarios </button>
+<br>
+
+<div *ngIf="renderer">
+  <span>
+    <mat-spinner style="width:800px; margin:0 auto;"></mat-spinner>     
+  </span>
+</div>
+
+<div *ngIf="usuarios">
+  <mat-card *ngFor = "let usuario of usuarios">
+    {{usuario.name}}
+  </mat-card>
+</div>

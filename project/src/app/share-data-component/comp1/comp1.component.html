@@ -1,0 +1,16 @@
+<div>
+
+  <br>
+  <mat-card>
+    Componente A
+    <div>
+      <mat-form-field class="example-full-width">
+        <input matInput #box placeholder="send message" (keyup.enter)="send(box.value)">
+      </mat-form-field>
+    </div>
+    <div>
+      {{value}}
+    </div>
+  </mat-card>
+ 
+</div>

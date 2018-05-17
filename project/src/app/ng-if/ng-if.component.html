@@ -1,0 +1,14 @@
+<div>
+    <br>
+    <mat-card> condicion: {{condicion}} </mat-card>
+
+    <br>
+    <button mat-button color="primary" (click)="cambiar()"> cambiar! </button>
+    <br>
+    
+    <br>
+    <mat-card *ngIf="condicion">
+        Esto se renderiza de acuerdo con la condicion de arrriba.
+    </mat-card>
+
+</div>

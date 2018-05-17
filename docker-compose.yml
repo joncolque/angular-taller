@@ -1,0 +1,14 @@
+version: '3'
+services:
+ taller:
+   image: taller
+   build:
+    context: ./
+    dockerfile: Dockerfile
+   container_name: taller-1
+   ports:
+    - 4200:4200
+   volumes:
+    - ./:/taller
+   command: ["/bin/bash","/taller/startFrontEnd.sh"]
+   tty: true

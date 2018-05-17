@@ -1,0 +1,24 @@
+<div>
+
+    <br>
+    <mat-card> Interpolación -> {{value}}
+      <br>
+      <div>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="valor" #box (keyup.enter)="onEnter(box.value)">
+          </mat-form-field>
+      </div>
+    </mat-card>
+    
+    <br>
+    <mat-card> Interpolación directa (two-way) -> {{value2}}
+      <br>
+      <div>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="valor" [(ngModel)]="value2">
+          </mat-form-field>
+      </div>
+    </mat-card>
+    
+
+</div>

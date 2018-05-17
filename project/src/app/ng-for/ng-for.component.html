@@ -1,0 +1,19 @@
+<div>
+  <div style="display:inline-block">
+    <small>
+        <mat-form-field class="margin-left-15">
+            <input matInput [(ngModel)]="newItem">
+        </mat-form-field>
+        <button mat-button color="primary" (click)="add()"> Añadir </button>
+    </small>
+</div>
+
+  <div>
+    <mat-card *ngFor = "let element of list; let i=index">
+      <mat-card-actions style="display:inline-block">
+          {{element}}
+          <button mat-button color="warn" (click)="remove(i)">remove</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
